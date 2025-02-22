@@ -45,7 +45,7 @@ const Navbar = () => {
               </>
             ) : (
               <button
-                onClick={() => window.location.href = 'https://time-capsule-2-krackhack.netlify.app/auth'}
+                onClick={() => window.location.href = '/auth'}
                 className="flex items-center px-4 py-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 transition-colors"
               >
                 <span className="mr-2">Login/Signup</span>
