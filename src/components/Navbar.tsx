@@ -46,9 +46,10 @@ const Navbar = () => {
             ) : (
               <Link to="/auth">
                 <button
-                  className="inline-block bg-indigo-600 text-white px-6 py-2  rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-colors shadow-lg"
+                  className="inline-flex items-center bg-indigo-600 text-white px-6 py-2 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-colors shadow-lg"
                 >
-                  Login/Signup
+                  <span className="mr-2">Login/Signup</span>
+                  <LogIn className="h-4 w-4" />
                 </button>
               </Link>
             )}
