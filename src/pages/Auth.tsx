@@ -30,7 +30,7 @@ const Auth = () => {
       <div className="bg-white p-8 rounded-xl shadow-lg">
         <div className="flex justify-center mb-5">
           <img 
-            src="src/timecapsulelogo3.svg"
+            src="https://raw.githubusercontent.com/ayushmankoley/time-capsule-2.0/12f7e2a9281bb28a66ccba5c3e3459c94f504811/src/timecapsulelogo3.svg"
             alt="TimeVault Logo" 
             className="h-50 w-150"
           />

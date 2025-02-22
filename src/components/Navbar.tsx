@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center">
             <img 
-              src="src\timecapsulelogo2.jpg" 
+              src="https://raw.githubusercontent.com/ayushmankoley/time-capsule-2.0/refs/heads/main/src/timecapsulelogo2.jpg"
               alt="TimeVault Logo" 
               className="h-8 object-contain"
             />
