@@ -46,7 +46,7 @@ const Navbar = () => {
             ) : (
               <Link to="/auth">
                 <button
-                  className="inline-block bg-indigo-600 text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-colors shadow-lg"
+                  className="inline-block bg-indigo-600 text-white px-6 py-2  rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-colors shadow-lg"
                 >
                   Login/Signup
                 </button>
