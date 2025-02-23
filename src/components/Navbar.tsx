@@ -35,7 +35,7 @@ const Navbar = () => {
                 <button
                   onClick={async () => {
                     await signOut();
-                    window.location.href = '/auth';
+                    window.location.href = 'https://time-capsule-2-krackhack.netlify.app';
                   }}
                   className="flex items-center px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-50 transition-all"
                 >
