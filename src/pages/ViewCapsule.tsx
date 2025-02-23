@@ -76,25 +76,9 @@ const ViewCapsule = () => {
           );
         }
 
-        const coverImage = capsuleData.capsule_contents?.find((content: CapsuleContent, index: number) => 
-          content.content_type === 'image' && index === 0
-        );
-        let coverImageUrl = '/default-cover.jpg';
-
-        if (coverImage?.url) {
-          try {
-            const cleanUrl = coverImage.url.split('?')[0];
-            const { data: signedData } = await supabase.storage
-              .from('capsule-content')
-              .createSignedUrl(cleanUrl, 3600);
-            
-            if (signedData) {
-              coverImageUrl = signedData.signedUrl;
-            }
-          } catch (error) {
-            console.error('Error getting cover image signed URL:', error);
-          }
-        }
+        // Set the cover image to the first image in the capsule contents
+        const coverImage = contentsWithUrls.find((content: CapsuleContent) => content.content_type === 'image');
+        let coverImageUrl = coverImage?.url || '/default-cover.jpg'; // Fallback to default if no image found
 
         setCapsule({
           ...capsuleData,
