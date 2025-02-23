@@ -212,8 +212,8 @@ const ViewCapsule = () => {
         <div className="relative h-64">
           <img
             className="cover-image w-full h-full object-cover"
-            src="/default-cover.jpg"
-            alt={capsule.title}
+            src={capsule ? capsule.contents.find(content => content.content_type === 'image')?.url || 'https://raw.githubusercontent.com/ayushmankoley/time-capsule-2.0/refs/heads/main/src/default-cover.jpeg' : 'https://raw.githubusercontent.com/ayushmankoley/time-capsule-2.0/refs/heads/main/src/default-cover.jpeg'}
+            alt={capsule ? capsule.title : 'Capsule Cover'}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           <div className="absolute bottom-6 left-6 text-white">
