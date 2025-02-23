@@ -76,9 +76,8 @@ const ViewCapsule = () => {
           );
         }
 
-        // Set the cover image to the first image in the capsule contents
         const coverImage = contentsWithUrls.find((content: CapsuleContent) => content.content_type === 'image');
-        let coverImageUrl = coverImage?.url || '/default-cover.jpg'; // Fallback to default if no image found
+        let coverImageUrl = coverImage?.url || 'https://raw.githubusercontent.com/ayushmankoley/time-capsule-2.0/refs/heads/main/src/default-cover.jpeg';
 
         setCapsule({
           ...capsuleData,
