@@ -151,9 +151,7 @@ const Dashboard = () => {
         >
           <div className="relative h-48">
             <img
-              src={
-                capsule.capsule_contents.find(content => content.content_type === 'image')?.url || 'https://raw.githubusercontent.com/ayushmankoley/time-capsule-2.0/refs/heads/main/src/default-cover.jpeg'
-              }
+              src={capsule.cover_image || '/default-cover.jpg'}
               alt={capsule.title}
               className="w-full h-full object-cover"
             />
