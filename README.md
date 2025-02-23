@@ -9,11 +9,11 @@ Login Credentials:
 - password: qwertyuiop
 
 ## 📌 Overview
-Time Capsule is a web platform that allows users to create, store, and share digital memories in the form of text, images, and videos. It provides a structured timeline for revisiting past moments, fostering nostalgia and community storytelling.
+Time Capsule is a web platform that allows users to create, store, and share digital memories in the form of text, images, and videos. Every memory is time-locked, meaning it can only be accessed after a specified future date. This ensures a unique way to preserve moments, fostering nostalgia and community storytelling while maintaining the anticipation of unlocking memories at the right time.
 
 ## 🚀 Features
-- **Create & Store Memories** – Users can add text, images, and videos.
-- **Collaborative Capsules** – Multiple users can contribute to shared memory capsules.
+- **Create & Store Memories** – Users can add text, images, and videos and keep them locked till a specific date.
+- **Shared Capsules** – Multiple users can publicly share memory capsules.
 - **Structured Timeline** – Memories are chronologically organized for easy navigation.
 - **Secure Cloud Storage** – Ensures long-term accessibility and preservation.
 - **Responsive UI** – Optimized for both desktop and mobile.
