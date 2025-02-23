@@ -105,6 +105,61 @@ SELECT create_bucket('capsule-images', true);
 npm run dev
 ```
 
+### Project Structure
+```
+time-capsule-2.0/
+│── node_modules/
+│── src/
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   ├── hooks/
+│   │   ├── useStorage.ts
+│   ├── lib/
+│   |   ├── supabase.ts
+│   ├── pages/
+│   │   ├── Auth.tsx
+│   │   ├── CreateCapsule.tsx
+│   │   ├── Dashboard.tsx
+│   │   ├── Home.tsx
+│   │   ├── ViewCapsule.tsx
+│   ├── store/
+│   │   ├── authStore.ts
+│   │   ├── capsuleStore.ts
+│   ├── types/
+│   │   ├── database.ts
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   ├── vite-env.d.ts
+│   ├── default-cover.jpeg
+│   ├── timecapsulelogo2.jpg
+│   ├── timecapsulelogo3.svg
+│── .env
+│── .gitignore
+│── eslint.config.js
+│── favicon.png
+│── index.html
+│── package-lock.json
+│── package.json
+│── postcss.config.js
+│── README.md
+│── tailwind.config.js
+│── tsconfig.app.json
+│── tsconfig.json
+│── tsconfig.node.json
+│── vite.config.ts
+
+```
+
+## 🚀 Code Summary
+- **User Authentication**: `Auth.tsx` (via Supabase)  
+- **Creating Capsules**: `CreateCapsule.tsx` (users add text, images, videos)  
+- **Viewing Capsules**: `ViewCapsule.tsx` (users access unlocked memories)  
+- **Dashboard**: `Dashboard.tsx` (overview of all created capsules)  
+- **State Management**: `authStore.ts` & `capsuleStore.ts` (State store)  
+- **Storage Handling**: `useStorage.ts` (managing file uploads via Supabase)  
+- **Database Schema**: `database.ts` (TypeScript types for database structure)  
+
 ## 📜 License
 This project is licensed under the MIT License.
 
